@@ -1,81 +1,26 @@
-<div style="text-align: justify">
+# 💛 Cuestionario Interactivo: Los Simpsons
+## 🚀 [Visita la pagina](https://tomygroi.github.io/cuestionario-LosSimpsons/)
 
-# Proyecto 1 - Juego de preguntas.
+### 📝 Descripción del Proyecto
+Desarrollé una aplicación web interactiva de trivia con temática de **Los Simpsons**. El proyecto consiste en un juego de preguntas de opción múltiple estructurado en etapas lógicas de navegación, diseñado para ofrecer una experiencia dinámica, fluida y entretenida para el usuario desde el navegador.
 
-<br>
+* **✨ Stack Tecnológico:** *HTML5*, *CSS3*, *JavaScript* (Vanilla JS).
 
-## Etapa 1 - HTML.
+---
 
-El juego debe mostrar una pantalla de bienvenida, un cuestionario con preguntas de opción múltiple y una pantalla final con el puntaje.
+### 🔎 Características Principales y Estructura
 
-> El ejemplo mostrado en las imagenes está basado en Batman, pero cada estudiante podrá elegir su propio tema libremente (por ejemplo: películas, fútbol, informática, historia, música, etc.).
+#### 🌐 Arquitectura de Páginas y Flujo de Navegación
+El sistema está construido mediante una arquitectura modular de tres vistas principales enlazadas dinámicamente:
 
-<br>
-<br>
+* **Módulo de Cuestionario (`index.html`):** * Evaluación interactiva compuesta por 10 preguntas con 4 opciones de respuesta cada una.
+  * Sistema de selección única por pregunta mediante controles optimizados.
+* **Pantalla de Resultados (`resultado.html`):** * Procesamiento y renderizado del puntaje final obtenido por el jugador.
+  * Botón estratégico **Volver a jugar** que reestablece el estado del juego y redirige a la pantalla inicial.
 
-## Estructura del proyecto.
-
-El proyecto debe estar compuesto por tres documentos `HTML`.
-
-1. `bienvenida.html` - Muestra el título del juego, una breve descripción del tema y un botón **Iniciar**.
-2. `cuestionario.html` - Contiene 10 preguntass con 4 opciones cada una (solo una correcta).
-3. `resultado.html` - Muestra el puntaje obtenido y un botón `Volver a jugar`.
-
-- Un archivo `style.css` para los estilos visuales.
-- Un archivo `main.js` para la lógica del puntaje y la interactividad.
-
-<br>
-<br>
-
------
-
-<br>
-<br>
-
-**Indicaciones**:
-
-- Usar encabezados (`<h1>`, `<h2>`) y botones (`<button>` o `<input type="submit">`).
-
-- En `cuestionario.html`, agrupar cada pregunta en un `<fieldset>` con su `<legend>`.
-
-- En `resultado.html`, dejar un espacio donde luego se mostrará el puntaje.
-
-<fieldset>
-<legend>
-Enlazar las páginas entre sí mediante botones
-</legend>
-
-`Iniciar` → abre el cuestionario.
-
-`Volver a jugar` → regresa a la bienvenida.
-
-</fieldset>
-
-<br>
-<br>
-
-**Ayuda**:
-
-- Estructura de cada pregunta:
-
-```HTML
-<fieldset>
-    <legend> Pregunta </legend>
-    <input type="checkbox" id="r1"><label for="r1">Respuesta</label>
-    <input type="checkbox" id="r2"><label for="r2">Respuesta</label>
-    <input type="checkbox" id="r3"><label for="r3">Respuesta</label>
-    <input type="checkbox" id="r4"><label for="r4">Respuesta</label>
-</fieldset>
-```
-
-# Imaganes ilustrativas de ejemplo:
-
-![img](Imagenes/imagenes1.png)
-![img](Imagenes/imagenes2.png)
-![img](Imagenes/imagenes3.png)
-![img](Imagenes/imagenes4.png)
-![img](Imagenes/imagenes5.png)
-
-
-
-</div>
+#### ⚙️ Requisitos Técnicos e Implementación
+* **Estructura Semántica Avanzada:** Organización limpia del contenido del cuestionario utilizando etiquetas nativas *HTML5* como `<fieldset>` y `<legend>` para agrupar y aislar de forma clara cada bloque de preguntas.
+* **Lógica en Tiempo Real (`main.js`):** Motor de *JavaScript* nativo desarrollado para controlar el flujo de navegación, la validación de las respuestas correctas y el cálculo exacto del puntaje acumulado.
+* **Diseño y Estilo Tematizado (`style.css`):** Maquetación adaptada con *CSS3* para recrear la identidad visual de la serie, garantizando una interfaz colorida, atractiva y con controles intuitivos para el usuario.
+* **Tabla de scores local (`resultado.js`):** Realización del puntaje final y creación de tabla de resultados de los de más jugadores.
+* **Controles Accesibles:** Vinculación exacta entre elementos `<input>` y sus respectivos `<label>` mediante identificadores únicos para optimizar la experiencia de clic.
